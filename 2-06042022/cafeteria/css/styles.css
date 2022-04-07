@@ -98,3 +98,50 @@ footer {
   width: 40px;
   height: 40px;
 }
+
+/* ===================== Início do CSS para HOME=============================================== */
+
+h2 {
+  font-family: verdana;
+  font-size: 20pt;
+  border-bottom: 1px dashed darkred;
+  margin: 50px;
+}
+
+main p {
+  margin: 10px;
+  width: 80%;
+  /* quando margem esquerda e direita for auto, ele fica no centro */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Lucida Sans";
+  font-size: 12pt;
+  /* espaçamento entre linhas com o comando line-height */
+  line-height: 30px;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 400px; /* largura da imagem */
+  height: 400px; /* altura imagem */
+  /* arredondar cantos da imagem */
+  border-radius: 100px;
+  /* imagem um pouco opaca */
+  opacity: 65%;
+  margin: 40px;
+  /* Efeito de transição, Isso fara com que 
+  a imagem tenha uma animação quando passar sobre ela */
+  transition: ease 1s;
+}
+
+#imghome img:hover {
+  opacity: 1;
+  /*width: 300px;
+  height: 300px;*/
+  transform: scale(1.2);
+  /* transform: rotate(360deg);  girar a imagem */
+}
