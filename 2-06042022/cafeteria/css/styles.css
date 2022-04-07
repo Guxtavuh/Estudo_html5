@@ -16,10 +16,10 @@ header {
   height: 300px; /*aplicar altura ao cabeçalho*/
   background-image: url("../img/cafeteria2.jpg"); /*aplicar imagem de fundo  ao cabeçalho*/
   /* ajustar o tamanho*/
-  background-size: 100% cover;
+  background-size: 100%;
   /* ajustar o tamanho vertical */
   background-position-y: -400px;
-  padding-top: 25px;
+  padding-top: 90px;
   text-align: center;
 }
 
@@ -52,4 +52,49 @@ nav ul li a {
   font-family: arial;
   /*tirar o sublinado*/
   text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(209, 167, 111);
+  /* Permitir com que o roda pé fique com seu conteudo flexivel */
+  display: flex;
+  /* elementos ficar em linha */
+  flex-direction: row;
+  /* ajustar o conteudo ao centro com justify-content:  e align-items: ; */
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#endereco {
+  font-family: arial;
+  font-size: 12pt;
+  color: white;
+  width: 300px;
+  text-align: left;
+}
+#redes {
+  position: absolute;
+  right: 10px;
+}
+
+#redes ul {
+  /* retirar as bolinhas de marcação */
+  list-style: none;
+}
+
+/* vamos dispor as imagens das redes em linha com display inline-block */
+
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
 }
