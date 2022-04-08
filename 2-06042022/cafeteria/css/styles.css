@@ -179,3 +179,73 @@ main p {
 }
 
 /* ================================= Fim da pagina historia ========================*/
+
+/* ================================= inicio css cardapio ============================ */
+h2 {
+  padding-left: 80px;
+}
+
+h3 {
+  /* converter as letras para maiusculo */
+  text-transform: uppercase;
+  font-size: 20pp;
+  font-family: verdana;
+  color: rgb(175, 129, 42);
+  margin: 30px;
+  padding-left: 110px;
+}
+#linha {
+  display: flex;
+  flex-direction: row;
+  /* realizar a quebra de linha para os demais produtos que forem adicionados */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#linha #produto {
+  width: 40%;
+  margin: 10px;
+  display: flex; /* determinar que o conteudo é flexivel */
+  flex-direction: row;
+}
+
+#linha #produto #imgprod,
+#linha #produto #descricao {
+  width: 48%;
+  margin: 10px;
+  transition: ease 0.5s;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+h4 {
+  font-family: verdana;
+  font-size: 18pt;
+  margin: 10px;
+}
+
+h5 {
+  font-family: "Lucida Sans";
+  font-weight: lighter; /* retirar negrito */
+  margin: 10px;
+}
+
+h6 {
+  font-family: "Lucida Sans";
+  color: darkred;
+  font-size: 12pt;
+  margin: 10px;
+}
+#linha #produto:hover {
+  background-color: #4b3621;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================================= Fim da pagina cardapio =========================*/
