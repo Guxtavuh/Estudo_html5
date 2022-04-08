@@ -145,3 +145,37 @@ main p {
   transform: scale(1.2);
   /* transform: rotate(360deg);  girar a imagem */
 }
+/* ================================== Fim da home ========================= */
+
+/* ================================= Inicio da pagina historia========================*/
+
+#imghistoria {
+  /* centralizar div */
+  text-align: center;
+  /* alterar a largura da caixa com imagens */
+  width: 90%;
+  /* Centralizar a div que contem as imagens */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Vamos formatar o tamanho das imagens */
+#imghistoria img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+/* ============= Video historia  */
+#videohisotria {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#videohisotria iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ================================= Fim da pagina historia ========================*/
