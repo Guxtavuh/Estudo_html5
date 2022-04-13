@@ -1,0 +1,421 @@
+/*Arquivo de css(cascade style sheet - Folha de estilo em cascata é utilizado para fazer a camada de 
+formatação de um site em html
+*/
+/* 
+Vamos formatar todos os elementos presentes em uma pagina html, usando o *(asterisco e aplicar margem externa 
+e interna zero (0) e realizar o ajuste das caixa em html
+*/
+
+* {
+  margin: 0px; /* margem interna das caixas*/
+  padding: 0px; /* margem externa das caixas*/
+  box-sizing: border-box; /* ajuste de padding com as caixas sem a soma da com a largura*/
+}
+
+header {
+  height: 300px; /*aplicar altura ao cabeçalho*/
+  background-image: url("../img/cafeteria2.jpg"); /*aplicar imagem de fundo  ao cabeçalho*/
+  /* ajustar o tamanho*/
+  background-size: 100%;
+  /* ajustar o tamanho vertical */
+  background-position-y: -400px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Verdana;
+  font-size: 30pt;
+  color: rgb(238, 238, 238);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+  /* 1- primeiro elemento posição horizontal da sombra
+     2- segundo elemento posição posição vertical da sombra
+     3- efeito de esfumaçado da sombra
+     4 elemento cor
+  */
+}
+nav {
+  background-color: rgb(209, 167, 111);
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor os elementos em linha */
+  display: inline-block;
+  /*espaço entre os links*/
+  margin: 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-family: arial;
+  /*tirar o sublinado*/
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(209, 167, 111);
+  /* Permitir com que o roda pé fique com seu conteudo flexivel */
+  display: flex;
+  /* elementos ficar em linha */
+  flex-direction: row;
+  /* ajustar o conteudo ao centro com justify-content:  e align-items: ; */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#endereco {
+  font-family: arial;
+  font-size: 12pt;
+  color: white;
+  width: 300px;
+  text-align: left;
+}
+#redes {
+  position: absolute;
+  right: 10px;
+}
+
+#redes ul {
+  /* retirar as bolinhas de marcação */
+  list-style: none;
+}
+
+/* vamos dispor as imagens das redes em linha com display inline-block */
+
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===================== Início do CSS para HOME=============================================== */
+
+h2 {
+  font-family: verdana;
+  font-size: 20pt;
+  border-bottom: 1px dashed darkred;
+  margin: 50px;
+}
+
+main p {
+  margin: 10px;
+  width: 80%;
+  /* quando margem esquerda e direita for auto, ele fica no centro */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Lucida Sans";
+  font-size: 12pt;
+  /* espaçamento entre linhas com o comando line-height */
+  line-height: 30px;
+}
+
+#imghome {
+  text-align: center;
+}
+
+#imghome img {
+  width: 400px; /* largura da imagem */
+  height: 400px; /* altura imagem */
+  /* arredondar cantos da imagem */
+  border-radius: 100px;
+  /* imagem um pouco opaca */
+  opacity: 65%;
+  margin: 40px;
+  /* Efeito de transição, Isso fara com que 
+  a imagem tenha uma animação quando passar sobre ela */
+  transition: ease 1s;
+}
+
+#imghome img:hover {
+  opacity: 1;
+  /*width: 300px;
+  height: 300px;*/
+  transform: scale(1.2);
+  /* transform: rotate(360deg);  girar a imagem */
+}
+/* ================================== Fim da home ========================= */
+
+/* ================================= Inicio da pagina historia========================*/
+
+#imghistoria {
+  /* centralizar div */
+  text-align: center;
+  /* alterar a largura da caixa com imagens */
+  width: 90%;
+  /* Centralizar a div que contem as imagens */
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Vamos formatar o tamanho das imagens */
+#imghistoria img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+/* ============= Video historia  */
+#videohisotria {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#videohisotria iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ================================= Fim da pagina historia ========================*/
+
+/* ================================= inicio css cardapio ============================ */
+h2 {
+  padding-left: 80px;
+}
+
+h3 {
+  /* converter as letras para maiusculo */
+  text-transform: uppercase;
+  font-size: 20pp;
+  font-family: verdana;
+  color: rgb(175, 129, 42);
+  margin: 30px;
+  padding-left: 110px;
+}
+#linha {
+  display: flex;
+  flex-direction: row;
+  /* realizar a quebra de linha para os demais produtos que forem adicionados */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#linha #produto {
+  width: 40%;
+  margin: 10px;
+  display: flex; /* determinar que o conteudo é flexivel */
+  flex-direction: row;
+}
+
+#linha #produto #imgprod,
+#linha #produto #descricao {
+  width: 48%;
+  margin: 10px;
+  transition: ease 0.5s;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+h4 {
+  font-family: verdana;
+  font-size: 18pt;
+  margin: 10px;
+}
+
+h5 {
+  font-family: "Lucida Sans";
+  font-weight: lighter; /* retirar negrito */
+  margin: 10px;
+}
+
+h6 {
+  font-family: "Lucida Sans";
+  color: darkred;
+  font-size: 12pt;
+  margin: 10px;
+}
+#linha #produto:hover {
+  background-color: #4b3621;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================================= Fim da pagina cardapio =========================*/
+
+/* ================================== inicio "onde estamos" css ================================= */
+#mapa {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+/* ================================== Fim estilo do mapa ======================================== */
+
+/* ================================= Início da pagina contato =================================== */
+main form {
+  background-color: rgb(214, 188, 153);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px silver;
+  border-radius: 5%;
+}
+
+main form input,
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: verdana;
+  border: 15px;
+}
+
+main form input[type="tel"] {
+  width: 50%;
+}
+main form textarea {
+  height: 200px;
+}
+main form input[type="submit"] {
+  margin-left: 38%;
+  margin-right: 25%;
+  width: 20%;
+  background-color: chocolate;
+  color: white;
+  border: 0%;
+  transition: ease 0.5s;
+}
+main form input [type="submit"]:hover {
+  cursor: pointer;
+  background-color: tomato;
+  color: black;
+}
+/* ================================= Fim do contato ============================================= */
+#abrir {
+  display: none;
+}
+#fechar {
+  display: none;
+}
+
+/* ================================= Área de responsividade ======================================= */
+/* --------------------------------- tela de cll -------------------------------------------------- */
+@media (min-width: 0px) and (max-width: 576px) {
+  #imghome img {
+    width: 300px;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    height: 200px;
+    background-position-y: -50px;
+    background-size: 100%;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+
+  nav {
+    width: 200px;
+    /* VH= viewport height, altura do dispositivo */
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    padding-top: 200px;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  nav ul li a {
+    font-size: 20pt;
+  }
+
+  #abrir {
+    background-color: white;
+    padding: 10px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 45px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  #fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20pt;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+  }
+  footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  footer #redes {
+    position: relative;
+    right: auto;
+  }
+  #endereco #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #endereco {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+  #imghistoria img {
+    width: 100%;
+    height: auto;
+  }
+  h2 {
+    width: auto;
+    padding-left: 50px;
+    height: auto;
+  }
+  #linha {
+    flex-direction: column;
+  }
+  #linha #produto {
+    width: 100%;
+    flex-direction: column;
+  }
+  #linha #produto #imgprod,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 10px;
+    transition: ease 0.5s;
+  }
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main form {
+    width: 100%;
+  }
+}
